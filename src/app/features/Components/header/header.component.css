@@ -1,0 +1,61 @@
+@import '../../../../config-scss/variables.scss';
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 49.3rem;
+  background: var(--primary-bg);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 136rem;
+}
+
+.wrapper-title .title{
+  font-weight: 700;
+  font-size: 5.5rem;
+  line-height: 6rem;
+  margin-bottom: 2.4rem;
+}
+.wrapper-title .title span{
+  color: var(--second-text-color);
+}
+
+.wrapper-title .input-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wrapper-title .input-search h3 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 3.1rem;
+}
+.wrapper-title .input-search form input{
+  width: 33rem;
+  height: 4.4rem;
+  font-size: 1.8rem;
+  color: var(--primary-text-color);
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 1rem;
+}
+.wrapper-title .input-search form button{
+  width: 10.8rem;
+  height: 4.3rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  background: var(--btn-search);
+  box-shadow: 0px 4px 15px var(--btn-search);
+  border-radius: 0px 5px 5px 0px;
+}
+
