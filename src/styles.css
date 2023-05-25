@@ -7,3 +7,6 @@ html{
   color: var(--primary-text-color);
   background: #F8F8F8;
 }
+button {
+  cursor: pointer;
+}
