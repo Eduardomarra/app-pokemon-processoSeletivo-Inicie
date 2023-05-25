@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { HeaderComponent } from './Components/header/header.component';
+import { FavoritePokemonsComponent } from './Components/favorite-pokemons/favorite-pokemons.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    FavoritePokemonsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     HeaderComponent

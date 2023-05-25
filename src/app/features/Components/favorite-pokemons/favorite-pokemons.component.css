@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+
+}
+.container .wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 136rem;
+}
+
+.wrapper h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.wrapper-cards {
+  width: 100%;
+  margin-top: 5rem;
+}
+.wrapper-cards .list-cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-cards .card {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 22.2rem;
+  height: 27.1rem;
+  background: #FBFDFF;
+  border-radius: 0.2rem;
+}
+.list-cards .card .header-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+.list-cards .card .header-card .title{
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+.list-cards .card .header-card .cod{
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.list-cards .card .img-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-cards .card .img-card img {
+  width: 12.4rem;
+  height: 12.2rem;
+}
+
+.list-cards .card .attibute-pokemon{
+  padding: 1.6rem;
+}
+.list-cards .card .attibute-pokemon .height,
+.list-cards .card .attibute-pokemon .weight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.btn-prev, .btn-next {
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #fff;
+  font-size: 1.8rem;
+  background: var(--btn-search);
+  border-radius: 50%;
+}
+.btn-prev {
+  left: -1.5rem;
+}
+.btn-next {
+  right: -1.5rem;
+}
