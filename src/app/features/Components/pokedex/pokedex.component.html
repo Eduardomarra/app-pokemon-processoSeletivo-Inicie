@@ -1,32 +1,36 @@
-<div class="container">
-  <div class="wrapper">
-    <div class="title">
-      <h1>Pokedéx</h1>
-      <div class="btn-pag">
-        <button class="btn-prev"><</button>
-        <button class="btn-next">></button>
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="title">
+        <h1>Pokedéx</h1>
+        <div class="btn-pag">
+          <button class="btn-prev" (click)="prevPagePokemon()"><</button>
+          <button class="btn-next" (click)="nextPagePokemon()">></button>
+        </div>
+      </div>
+      <div class="wrapper-cards">
+        <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
+        <ul class="list-cards">
+          <li class="card">
+            <div class="header-card">
+              <span class="title-pokemon">{{pokemon.name}}</span>
+              <span class="cod">#{{pokemon.status?.id}}</span>
+            </div>
+            <div class="img-card">
+              <img src={{pokemon.status?.sprites.other.dream_world.front_default}} alt="">
+            </div>
+            <div class="attibute-pokemon">
+              <div class="height">
+                Altura <span>{{pokemon.status?.height}}cm</span>
+              </div>
+              <div class="weight">
+                Peso <span>{{pokemon.status?.weight}}kg</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </ng-template>
       </div>
     </div>
-    <div class="wrapper-cards">
-      <ul class="list-cards">
-        <li class="card" *ngFor="let value of lista">
-          <div class="header-card">
-            <span class="title-pokemon">{{value.name}}</span>
-            <span class="cod">#{{value.cod}}</span>
-          </div>
-          <div class="img-card">
-            <img src={{value.src}} alt={{value.name}}>
-          </div>
-          <div class="attibute-pokemon">
-            <div class="height">
-              Altura <span>{{value.heightPoke}}cm</span>
-            </div>
-            <div class="weight">
-              Peso <span>{{value.weightPoke}}kg</span>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
   </div>
-</div>
+
