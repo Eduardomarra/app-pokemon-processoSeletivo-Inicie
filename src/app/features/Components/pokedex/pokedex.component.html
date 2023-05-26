@@ -11,7 +11,7 @@
       <div class="wrapper-cards">
         <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
         <ul class="list-cards">
-          <li class="card">
+          <li class="card" [routerLink]="['details', pokemon.status?.id]">
             <div class="header-card">
               <span class="title-pokemon">{{pokemon.name}}</span>
               <span class="cod">#{{pokemon.status?.id}}</span>

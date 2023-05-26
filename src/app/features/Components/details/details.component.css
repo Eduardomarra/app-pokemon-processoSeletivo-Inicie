@@ -1,0 +1,187 @@
+@import '../../../../config-scss/variables.scss';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: var(--primary-bg);
+}
+.wrapper-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 136rem;
+  height: auto;
+}
+.logo {
+  position: absolute;
+  top: -8.5rem;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.description {
+  width: 55rem;
+}
+.title h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.8rem;
+}
+.type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.type span {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+.type span.bg-type {
+  color: #fff;
+  background: var(--second-bg);
+  padding: 0 2rem;
+  border-radius: 0.2rem;
+}
+
+.description-pokemon{
+  margin-bottom: 3rem;
+}
+.description-pokemon h3, .information h3{
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.description-pokemon p{
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: justify;
+}
+
+.attibute-pokemon{
+  margin-bottom: 4rem;
+}
+.attibute-pokemon .height, .attibute-pokemon .weight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.cards-life {
+  display: flex;
+  flex-direction: column;
+}
+.att {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  margin-right: 10px;
+  margin-bottom: 17px;
+}
+.att-name {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-right: 15px;
+}
+.graphic {
+  width: 200px;
+  height: 20px;
+  background-color: #FBFDFF;
+  border-radius: 2px;
+}
+.life {
+  height: 100%;
+  background-color: #C4F789;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.defense {
+  height: 100%;
+  background-color: #F7802A;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.speed {
+  height: 100%;
+  background-color: #49D0B0;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.attack {
+  height: 100%;
+  background-color: #EA686D;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.image-pokemon {
+  position: relative;
+  width: 37.6rem;
+  height: 39.6rem;
+}
+.image-pokemon img {
+  width: 100%;
+  height: 100%;
+}
+
+.btnHome {
+  position: absolute;
+  top: -10rem;
+  right: -20rem;
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid var(--primary-text-color);
+  overflow: hidden;
+  border-radius: 30px;
+  color: var(--primary-text-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--primary-text-color);
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.btnHome:hover {
+  box-shadow: 1px 1px 50px var(--primary-text-color);
+  color: var(--primary-text-color);
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}

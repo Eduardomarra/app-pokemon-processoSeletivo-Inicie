@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="wrapper-container">
+    <ng-template [ngIf]="isLoading">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="../../../../assets/img-header/logo-app.svg" alt="">
+        </div>
+        <div class="description">
+          <div class="title">
+            <h1>{{pokemon[0]?.name}}</h1>
+            <div class="type">
+              <span>Cod: #{{pokemon[0].id}}</span>
+              <span>Tipo: <span class="bg-type">{{pokemon[0].types[0].type.name}}</span></span>
+            </div>
+            <div class="description-pokemon">
+              <h3>Descrição</h3>
+              <p>"{{pokemon[1].flavor_text_entries[6].flavor_text}}"
+              </p>
+            </div>
+            <div class="information">
+              <h3>Informações</h3>
+              <div class="attibute-pokemon">
+                <div class="height">
+                  Altura <span>{{pokemon[0].height}}cm</span>
+                </div>
+                <div class="weight">
+                  Peso <span>{{pokemon[0].weight}}kg</span>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="cards-life">
+                  <div class="att">
+                      <span class="att-name">Vida:</span>
+                      <div class="graphic">
+                          <div class="life" [style.width.%]="(attLife)"></div>
+                      </div>
+                  </div>
+                  <div class="att">
+                      <span class="att-name">Defesa:</span>
+                      <div class="graphic">
+                          <div class="defense" [style.width.%]="(attDefense)"></div>
+                      </div>
+                  </div>
+                  <div class="att">
+                      <span class="att-name">Velocidade:</span>
+                      <div class="graphic">
+                          <div class="speed" [style.width.%]="(attSpeed)"></div>
+                      </div>
+                  </div>
+                  <div class="att">
+                      <span class="att-name">Ataque:</span>
+                      <div class="graphic">
+                          <div class="attack" [style.width.%]="(attAttack)"></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-pokemon" routerLink="">
+          <button class="btnHome type1">
+            <span class="btn-txt">Voltar</span>
+          </button>
+          <img src={{pokemon[0].sprites.other.dream_world.front_default}} alt={{pokemon[0].name}}>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
+

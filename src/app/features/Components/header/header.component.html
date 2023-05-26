@@ -10,15 +10,14 @@
       <div class="input-search">
         <h3>Descubra todas as espécies de Pokémons</h3>
         <form>
-          <input type="text">
+          <input type="text" #input (keyup)="search(input.value)">
           <button>Buscar</button>
         </form>
       </div>
     </div>
     <div class="img-pokemon">
-      <img src="../../../../assets/img-header/img-pokemon.svg" alt="Imagens de Pokemons">
+      <img src="../../../../assets/img-header/img-header.svg" alt="Imagens de Pokemons">
     </div>
   </div>
 </div>
-<app-favorite-pokemons></app-favorite-pokemons>
-<app-pokedex></app-pokedex>
+

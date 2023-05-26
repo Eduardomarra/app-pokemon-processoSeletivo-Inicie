@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './features/Components/header/header.component';
+import { HomeComponent } from './features/pages/home/home.component';
+import { DetailsComponent } from './features/Components/details/details.component';
 
 const routes: Routes = [
-  {path: '', component: HeaderComponent}
+  {path: '', component: HomeComponent},
+  {path: 'details/:id', component: DetailsComponent}
 ];
 
 @NgModule({

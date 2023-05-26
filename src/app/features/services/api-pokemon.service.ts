@@ -31,4 +31,10 @@ export class ApiPokemonService {
       )
     )
   }
+
+  public searchPokemon(namePokemon: string):Observable<any> {
+    const url = `${this.baseURL}${namePokemon}`;
+    return this.httpClient.get<any>(url);
+
+  }
 }

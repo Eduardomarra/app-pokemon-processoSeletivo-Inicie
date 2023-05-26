@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiPokemonService } from '../../services/api-pokemon.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-pokedex',
@@ -19,14 +18,19 @@ export class PokedexComponent implements OnInit{
     this.apiGetAllPokemons();
   }
 
+
   public apiGetAllPokemons():void {
      this.apiPokemonService.getAllpokemons(this.endPoint, this.limited).subscribe(
       (res) => {
         this.getAllPokemons = res.results
-        console.log( this.getAllPokemons)
       }
     );
   }
+
+  public getSearch(value: string){
+    console.log(value)
+  }
+
 
   public nextPagePokemon() {
     if(this.endPoint == 90 ) {
