@@ -6,14 +6,14 @@
     height="auto"
     alt="Homepage do projeto"
     title="Home Pokemon"
-    src="./home.jpg"
+    src="./src/assets/home.JPG"
   />
    <img
     width="768px"
     height="auto"
     alt="Details do projeto"
     title="Details Pokemon"
-    src="./details.jpg"
+    src="./src/assets/details.JPG"
   />
 </div>
 
