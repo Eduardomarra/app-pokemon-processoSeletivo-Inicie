@@ -1,27 +1,46 @@
-# AppPokemon
+# Projeto App Pokemon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+<div align="center">
+  <img
+    width="768px"
+    height="auto"
+    alt="Homepage do projeto"
+    title="Home Pokemon"
+    src="./home.jpg"
+  />
+   <img
+    width="768px"
+    height="auto"
+    alt="Details do projeto"
+    title="Details Pokemon"
+    src="./details.jpg"
+  />
+</div>
 
-## Development server
+## 💻 Versão online
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+<a href="https://pokemon-emarra.vercel.app/" target="_blank">Versão online</a>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Layout disponibilizado através do processo seletivo "INICIE TRANSFORMAÇÃO EDUCACIONAL".
 
-## Build
+## 💻 Sobre o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+<p>Projeto criado para processo seletivo Angular.</p>
+<p>Objetivo: * utilizar api de pokemons <a href="https://pokeapi.co/" target="_blank">PokeApi</a></p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Instruções
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
+## Rodando localmente
 
-## Further help
+* ### Frontend
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Navegar até a pasta naped
+2. Instalar todos os pacotes com `yarn install` ou `npm install`
+3. Executar o comando `yarn start` ou `npm run start`
+4. Em alguns seguntos a URL: `http://localhost:4200/` ficará disponível
