@@ -9,10 +9,10 @@
       </div>
       <div class="input-search">
         <h3>Descubra todas as espécies de Pokémons</h3>
-        <form>
-          <input type="text" #input (keyup)="search(input.value)">
-          <button>Buscar</button>
-        </form>
+          <form >
+            <input type="text" (keyup)="keyupInput($event)">
+            <button type="button" (click)="searchPokemon()">Buscar</button>
+          </form>
       </div>
     </div>
     <div class="img-pokemon">

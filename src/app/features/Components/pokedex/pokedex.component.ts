@@ -27,11 +27,6 @@ export class PokedexComponent implements OnInit{
     );
   }
 
-  public getSearch(value: string){
-    console.log(value)
-  }
-
-
   public nextPagePokemon() {
     if(this.endPoint == 90 ) {
       return

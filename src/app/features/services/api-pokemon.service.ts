@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, tap, map } from 'rxjs';
+import { Observable, tap, map, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,9 @@ import { Observable, tap, map } from 'rxjs';
 export class ApiPokemonService {
 
   private baseURL: string = 'https://pokeapi.co/api/v2/pokemon/';
+
+  private valueInput = new BehaviorSubject<[]>([]);
+  private searchInputPokemon = this.valueInput.asObservable();
 
   constructor(private httpClient: HttpClient) { }
 
@@ -30,11 +33,5 @@ export class ApiPokemonService {
         res => res
       )
     )
-  }
-
-  public searchPokemon(namePokemon: string):Observable<any> {
-    const url = `${this.baseURL}${namePokemon}`;
-    return this.httpClient.get<any>(url);
-
   }
 }
